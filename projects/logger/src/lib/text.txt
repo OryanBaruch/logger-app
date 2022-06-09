@@ -1,18 +1,1 @@
-
-Write a logger
-Assume you have a workspace with multiple applications
- (build by angular cli or nx)  and your goal is to implement a logger package
-  that will serve them all to capture HTTP errors, requirements:
-The logger data will include the message, stack trace, and timestamp.
-The logger will write its errors to:
-console.
-localstorage
-The logger will be used only in production.
-Use the logger to log HTTP errors thrown in the application.
-Use logger to log also exceptions thrown anywhere in the application.
-Make the logger module configurable that will include:
-Message format
-Targets (console, localstorage etc.)
-Etc.
-Manage the logs in a queue and flush the queue to targets every 5sec
- (this should also be configurable, both the use of queue + flush timing) - The queue should be implemented using RxJs.
+Logger app
